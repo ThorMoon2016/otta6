@@ -176,10 +176,33 @@ header {
     color: black;
     padding: 20px;
     border-radius: 10px;
-    width: 70%;
+    width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+}
+
+
+
+
+.premium-job-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 70%; /* Možeš promijeniti vrijednost u zavisnosti od tvojih potreba */
+    margin: 0 auto; /* Centriranje elementa horizontalno */
+}
+
+
+@media (max-width: 768px) {
+    .premium-job-container {
+        width: 99%; /* Povećava širinu za mobilne uređaje */
+        max-width: none; /* Uklanja maksimalnu širinu kako bi se dozvolilo širenje */
+        padding: 10px; /* Dodaje padding unutar kontejnera, opcionalno */
+        box-sizing: border-box; /* Osigurava da padding ne utiče na ukupnu širinu */
+    }
 }
 
 /* Skriva sve osim aktivnog slajda */
@@ -191,6 +214,9 @@ header {
     display: block;
 }
 
+
+
+
 /* Stilovi za slider */
 .slider {
     display: flex;
@@ -199,15 +225,6 @@ header {
     width: 100%;
 }
 
-.premium-job-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    width: 70%; /* Možeš promijeniti vrijednost u zavisnosti od tvojih potreba */
-    margin: 0 auto; /* Centriranje elementa horizontalno */
-}
 
 
 
