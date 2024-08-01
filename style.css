@@ -288,12 +288,20 @@ header {
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 5px;
+    
 }
 
 .salary-info {
     font-size: 12px;
     color: gray;
 }
+
+@media (max-width: 768px) {
+    .salary-info {
+        margin-left: 22px;
+    }
+}
+
 
 .premium-job-skills {
     display: flex;
@@ -371,8 +379,20 @@ header {
         margin-bottom: 10px;
     }
 
-    .premium-job-salary, .premium-job-skills, .premium-job-location {
-        width: 100%; /* Širina sadržaja unutar left-column-a */
+    .premium-job-salary,  .premium-job-location {
+        width: 40%; /* Širina sadržaja unutar left-column-a */
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+
+      .premium-job-location {
+        width: 70%; /* Širina sadržaja unutar left-column-a */
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+     .premium-job-skills {
+        width: 30%; /* Širina sadržaja unutar left-column-a */
         margin-bottom: 10px;
     }
 
@@ -384,7 +404,7 @@ header {
     .company-logo {
         width: 70px;
         height: 70px;
-        margin-top: 10px; /* Razmak iznad loga */
+        margin-top: -10px; /* Razmak iznad loga */
     }
 
     .right-column {
@@ -410,6 +430,16 @@ header {
         width: 100%;
     }
 }
+
+
+
+.right-column .company-logo {
+    width: 160px; /* Postavite željenu širinu */
+    height: auto; /* Održava omjer stranica slike */
+    display: block; /* Osigurava da slika zauzima cijelu dostupnu širinu */
+    margin-bottom: 10px; /* Razmak ispod slike */
+}
+
 
 
 
